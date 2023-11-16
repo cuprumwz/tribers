@@ -1,7 +1,10 @@
 [package]
 name = "tribers"
 version = "0.1.0"
+authors = ["Cuprum Wangzuo <cuprumwz@foxmail.com>"]
 edition = "2021"
+description = "A embedded framework tribe use rust"
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
