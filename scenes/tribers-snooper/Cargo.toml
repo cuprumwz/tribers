@@ -11,4 +11,7 @@ license = "MIT OR Apache-2.0"
 [dependencies]
 tribers = { version = "0" }
 clap = { version = "4" }
+config = { version = "0.13.3" }
 serialport = "4.2.2"
+sigrok = { git = "https://github.com/cuprumwz/sigrok-rs.git" }
+# sigrok = { git = "git@github.com:cuprumwz/sigrok-rs.git" }
