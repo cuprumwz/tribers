@@ -15,7 +15,8 @@ tokio-serial = { version = "5.4.4" }
 console = { version = "0.15" }
 axum = { version = "0.6" }
 clap = { version = "4" }
-config = { version = "0.13.3" }
+# config can not load
+# config = { version = "0.13.3" }
 serialport = "4.2.2"
 sigrok = { git = "https://github.com/cuprumwz/sigrok-rs.git" }
 # sigrok = { git = "git@github.com:cuprumwz/sigrok-rs.git" }
