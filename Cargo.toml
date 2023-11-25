@@ -1,3 +1,18 @@
+[workspace]
+resolver = "2"
+members = [
+  "pieces/tribers-couper",
+  "pieces/tribers-larder",
+  "pieces/tribers-linker",
+  "pieces/tribers-matrix",
+  "pieces/tribers-snaper",
+  "pieces/tribers-valver",
+  "pieces/tribers-vitaer",
+  "scenes/tribers-dossier",
+  "scenes/tribers-snooper",
+  "scenes/tribers-spawner",
+]
+
 [package]
 name = "tribers"
 version = "0.1.0"
