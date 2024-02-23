@@ -10,7 +10,7 @@ license = "MIT OR Apache-2.0"
 
 [dependencies]
 tribers = { version = "0" }
-tokio = { version = "1" }
+tokio = { version = "1", features = ["full"] }
 tokio-serial = { version = "5.4.4" }
 console = { version = "0.15" }
 axum = { version = "0.6" }
@@ -20,3 +20,14 @@ clap = { version = "4" }
 serialport = "4.2.2"
 sigrok = { git = "https://github.com/cuprumwz/sigrok-rs.git" }
 # sigrok = { git = "git@github.com:cuprumwz/sigrok-rs.git" }
+
+futures = "0.3"
+tower = { version = "0.4", features = ["util"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+serde_json = { version = "1.0" }
+
+opentelemetry = { version = "0.21", features = ["metrics"] }
+opentelemetry_sdk = { version = "0.21", features = ["metrics", "rt-tokio"] }
+opentelemetry-stdout = { version = "0.2", features = ["metrics"]}

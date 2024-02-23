@@ -9,3 +9,29 @@ license = "MIT OR Apache-2.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+anyhow = "1.0"
+tribers = { version = "0" }
+tokio = { version = "1", features = ["full"] }
+tokio-serial = { version = "5.4.4" }
+console = { version = "0.15" }
+axum = { version = "0.7" }
+clap = { version = "4" }
+# config can not load
+# config = { version = "0.13.3" }
+serialport = "4.2.2"
+sigrok = { git = "https://github.com/cuprumwz/sigrok-rs.git" }
+# sigrok = { git = "git@github.com:cuprumwz/sigrok-rs.git" }
+
+futures = "0.3"
+hyper = { version = "1.0.1", features = ["full"] }
+tower = { version = "0.4", features = ["util"] }
+tower-http = { version = "0.5.0", features = ["add-extension"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0" }
+
+opentelemetry = { version = "0.21", features = ["metrics"] }
+opentelemetry_sdk = { version = "0.21", features = ["metrics", "rt-tokio"] }
+opentelemetry-stdout = { version = "0.2", features = ["metrics"]}
