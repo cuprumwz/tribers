@@ -1,0 +1,32 @@
+{
+    "version": "0.1.0",
+    "menages": [
+        {
+            "name": "dossier",
+            "step": 0,
+            "master": {
+                "binary": "/opt/tribers-dossier"
+            }
+        },
+        {
+            "name": "spy1",
+            "step": 9,
+            "master": {
+                "binary": "/opt/tribers/tribvey-snooper"
+            },
+            "assist": {
+                "binary": "/opt/tribers/tribvey-snooper-assist"
+            }
+        },
+        {
+            "name": "spy2",
+            "step": 9,
+            "master": {
+                "binary": "/opt/tribers/tribvey-snooper"
+            },
+            "assist": {
+                "binary": "/opt/tribers/tribvey-snooper-assist"
+            }
+        }
+    ]
+}
