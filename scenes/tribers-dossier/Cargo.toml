@@ -35,3 +35,6 @@ serde_json = { version = "1.0" }
 opentelemetry = { version = "0.21", features = ["metrics"] }
 opentelemetry_sdk = { version = "0.21", features = ["metrics", "rt-tokio"] }
 opentelemetry-stdout = { version = "0.2", features = ["metrics"]}
+
+sea-orm = { version = "0.12" }
+nusb = { version = "0.1" }
