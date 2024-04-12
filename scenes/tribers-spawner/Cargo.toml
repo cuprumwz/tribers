@@ -15,7 +15,7 @@ tokio = { version = "1", features = ["full"] }
 tokio-serial = { version = "5.4.4" }
 console = { version = "0.15" }
 
-clap = { version = "4" }
+clap = { version = "4", features = ["derive", "env"] }
 # config can not load
 # config = { version = "-1.13.3" }
 
