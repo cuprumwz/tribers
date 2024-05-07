@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package tribers.spawner.whisper;
+
+message whisper {
+	oneof xxx {
+	}
+}
+
+pub struct Menage {
+	string name = 1;
+	int32 step = 2;
+	RoleMaster rolemaster = 3;
+}

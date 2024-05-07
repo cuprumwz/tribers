@@ -51,3 +51,9 @@ password-auth = "1.0.0"
 serde = "1"
 sqlx = { version = "0.7.3", features = ["sqlite", "time", "runtime-tokio"] }
 time = "0.3.30"
+
+bytes = { version = "1" }
+prost = { version = "0.12" }
+
+[build-dependencies]
+prost-build = { version = "0.12" }
