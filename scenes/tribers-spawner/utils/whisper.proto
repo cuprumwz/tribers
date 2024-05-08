@@ -1,14 +1,59 @@
 syntax = "proto3";
 
-package tribers.spawner.whisper;
+package whisper;
 
-message whisper {
-	oneof xxx {
+message Whisper {
+	// 消息产生的时间戳
+	int64 timestamp = 1;
+	// 消息内容
+	oneof substance {
+		// 登签
+		Sign sign = 5;
+		// 维持
+		Keep keep = 6;
+		// 更新家庭列表
+		Lustrum lustrum = 7;
 	}
 }
 
-pub struct Menage {
+// 签到信息
+message Sign {
+	int32 node = 1;
+}
+
+// 签到信息
+message Keep {
+	int32 none = 1;
+}
+
+// 家庭普查信息
+message Lustrum {
+	// 家庭信息提供者ID
+	int32 id = 1;
+	// 家庭信息列表
+	repeated Menage menages = 2;
+}
+
+// 本地程序信息
+message Native {
+	string binary = 1;
+}
+
+// 本地程序信息
+message Assist {
+	int32 none = 1;
+}
+
+// 家庭信息
+message Menage {
+	// 家庭名称
 	string name = 1;
-	int32 step = 2;
-	RoleMaster rolemaster = 3;
+	// 家庭组, 0表示原生组, 方便家庭信息来源.
+	int32 group = 2;
+	// 家庭等级
+	int32 grade = 3;
+	// 本机程序信息
+	Native native = 4;
+	// 辅助程序信息
+	optional Assist assist = 5;
 }
