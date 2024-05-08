@@ -1,6 +1,8 @@
 use std::{fs::File, io::BufReader, path::{Path, PathBuf}};
 use serde::Deserialize;
 
+use prost_wkt_types::*;
+
 // #[derive(Deserialize, Debug)]
 // pub struct Native {
 //     pub binary: PathBuf,
