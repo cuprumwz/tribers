@@ -48,12 +48,15 @@ async-trait = "0.1.74"
 http = "1.0.0"
 hyper = "1.0.1"
 password-auth = "1.0.0"
-serde = "1"
+serde = { version = "1.0", features = ["derive"] }
 sqlx = { version = "0.7.3", features = ["sqlite", "time", "runtime-tokio"] }
 time = "0.3.30"
 
 bytes = { version = "1" }
 prost = { version = "0.12" }
+prost-wkt = { version = "0.5" }
+prost-wkt-types = { version = "0.5" }
 
 [build-dependencies]
 prost-build = { version = "0.12" }
+prost-wkt-build = { version = "0.5" }
