@@ -17,6 +17,8 @@ pub mod whisper {
 	include!(concat!(env!("OUT_DIR"), "/whisper.rs"));
 }
 
+pub use whisper::*;
+
 // 上电初始化一次的参数 'static
 #[derive(Deserialize, Debug)]
 pub struct Innate {

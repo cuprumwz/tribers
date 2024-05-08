@@ -55,5 +55,5 @@ message Menage {
 	// 本机程序信息
 	Native native = 4;
 	// 辅助程序信息
-	optional Assist assist = 5;
+	Assist assist = 5;
 }
