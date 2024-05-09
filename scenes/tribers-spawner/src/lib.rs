@@ -3,18 +3,6 @@ use serde::Deserialize;
 
 use prost_wkt_types::*;
 
-// #[derive(Deserialize, Debug)]
-// pub struct Native {
-//     pub binary: PathBuf,
-// }
-
-// #[derive(Deserialize, Debug)]
-// pub struct Menage {
-//     pub name: String,
-//     pub grade: u8,
-//     pub master: Native,
-// }
-
 pub mod whisper {
 	include!(concat!(env!("OUT_DIR"), "/whisper.rs"));
 }
