@@ -1,37 +1,53 @@
 syntax = "proto3";
 
+// option java_multiple_files = true;
+// option java_package = "fun.cuprumwz.tribers.whisper";
+// option java_outer_classname = "WhisperProto";
+
 package whisper;
 
-message Whisper {
-	// 消息产生的时间戳
+service Whisper {
+	// 登签
+    rpc Sign(SignRequest) returns (SignRespond) {}
+
+	// 维持
+    rpc Keep(KeepRequest) returns (KeepRespond) {}
+
+	// 更新家庭列表
+    rpc Lustrum(LustrumRequest) returns (LustrumRespond) {}
+}
+
+// 签到信息
+message SignRequest {
+	// 时间戳
 	int64 timestamp = 1;
-	// 消息内容
-	oneof substance {
-		// 登签
-		Sign sign = 5;
-		// 维持
-		Keep keep = 6;
-		// 更新家庭列表
-		Lustrum lustrum = 7;
-	}
+	int32 node = 2;
+}
+message SignRespond {
+	// 时间戳
+	int64 timestamp = 1;
 }
 
 // 签到信息
-message Sign {
-	int32 node = 1;
+message KeepRequest {
+	int64 timestamp = 1;
 }
-
-// 签到信息
-message Keep {
-	int32 none = 1;
+message KeepRespond {
+	int64 timestamp = 1;
 }
 
 // 家庭普查信息
-message Lustrum {
+message LustrumRequest {
+	// 时间戳
+	int64 timestamp = 1;
 	// 家庭信息提供者ID
-	int32 id = 1;
+	int32 id = 2;
 	// 家庭信息列表
-	repeated Menage menages = 2;
+	repeated Menage menages = 3;
+}
+message LustrumRespond {
+	// 时间戳
+	int64 timestamp = 1;
 }
 
 // 本地程序信息
