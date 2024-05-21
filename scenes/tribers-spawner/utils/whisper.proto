@@ -8,36 +8,36 @@ package whisper;
 
 service Whisper {
 	// 登签
-    rpc Sign(SignRequest) returns (SignRespond) {}
+    rpc Sign(SignPing) returns (SignPong) {}
 
 	// 维持
-    rpc Keep(KeepRequest) returns (KeepRespond) {}
+    rpc Keep(KeepPing) returns (KeepPong) {}
 
 	// 更新家庭列表
-    rpc Lustrum(LustrumRequest) returns (LustrumRespond) {}
+    rpc Lustrum(LustrumPing) returns (LustrumPong) {}
 }
 
 // 签到信息
-message SignRequest {
+message SignPing {
 	// 时间戳
 	int64 timestamp = 1;
 	int32 node = 2;
 }
-message SignRespond {
+message SignPong {
 	// 时间戳
 	int64 timestamp = 1;
 }
 
 // 签到信息
-message KeepRequest {
+message KeepPing {
 	int64 timestamp = 1;
 }
-message KeepRespond {
+message KeepPong {
 	int64 timestamp = 1;
 }
 
 // 家庭普查信息
-message LustrumRequest {
+message LustrumPing {
 	// 时间戳
 	int64 timestamp = 1;
 	// 家庭信息提供者ID
@@ -45,7 +45,7 @@ message LustrumRequest {
 	// 家庭信息列表
 	repeated Menage menages = 3;
 }
-message LustrumRespond {
+message LustrumPong {
 	// 时间戳
 	int64 timestamp = 1;
 }
