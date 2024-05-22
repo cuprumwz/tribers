@@ -54,9 +54,12 @@ time = "0.3.30"
 
 bytes = { version = "1" }
 prost = { version = "0.12" }
-prost-wkt = { version = "0.5" }
-prost-wkt-types = { version = "0.5" }
+prost-types = { version = "0.12" }
+# prost-wkt = { version = "0.5" }
+# prost-wkt-types = { version = "0.5" }
+tonic = { version = "0.11" }
 
 [build-dependencies]
 prost-build = { version = "0.12" }
-prost-wkt-build = { version = "0.5" }
+# prost-wkt-build = { version = "0.5" }
+tonic-build = { version = "0.11" }

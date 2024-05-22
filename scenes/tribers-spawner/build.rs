@@ -30,13 +30,13 @@
 //     prost_wkt_build::add_serde(out, descriptor);
 // }
 
-fn main() -> std::io::Result()> {
+fn main() -> std::io::Result<()> {
     tonic_build::configure()
         .type_attribute(
             ".",
             "#[derive(serde::Serialize,serde::Deserialize)]"
         )
-        .compile(&["utils/whisper.proto"], &["utils"])
+        .compile(&["utils/greeter.proto"], &["utils"])
         .unwrap();
 
     Ok(())

@@ -8,8 +8,6 @@ members = [
   "pieces/tribers-snaper",
   "pieces/tribers-valver",
   "pieces/tribers-vitaer",
-  "scenes/tribers-dossier",
-  "scenes/tribers-snooper",
   "scenes/tribers-spawner",
 ]
 
