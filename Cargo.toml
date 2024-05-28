@@ -1,7 +1,7 @@
 [workspace]
 resolver = "2"
 members = [
-  "pieces/tribers-couper",
+  "pieces/tribers-bonder",
   "pieces/tribers-larder",
   "pieces/tribers-linker",
   "pieces/tribers-matrix",
