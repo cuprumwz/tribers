@@ -1,4 +1,9 @@
 * Inbox
+** [2024-06-20 四] keyword
+scope
+theme
+nodew01
+nodea01
 ** [2024-04-08 一 23:34] package
 - clap
 - sea-orm
